@@ -1,0 +1,24 @@
+:root {
+    --dkblue: #042940;
+    --satgreen: #005c53;
+    --ltgreen: #9fc131;
+    --ylgreen: #dbf227;
+    --beige: #dbf227;
+    --font-size: 1.3rem;
+    --mono: 'Oxygen Mono', monospace;
+    --sans: 'Oxygen', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--sans);
+}
