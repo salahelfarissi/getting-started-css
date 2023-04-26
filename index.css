@@ -1,9 +1,9 @@
 :root {
     --dkblue: #042940;
-    --satgreen: #005c53;
-    --ltgreen: #9fc131;
-    --ylgreen: #dbf227;
     --beige: #dbf227;
+    --aqblue: #0fc2c0;
+    --frblue: #008f8c;
+    --grey: #e6e6e6;
     --font-size: 1.3rem;
     --mono: 'Oxygen Mono', monospace;
     --sans: 'Oxygen', sans-serif;
@@ -23,4 +23,94 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--sans);
+    background-color: var(--dkblue);
+    color: var(--beige);
+    font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--aqblue);
+}
+
+a:hover {
+    color: var(--frblue);
+    text-decoration: none;
+}
+
+#intro {
+    padding-bottom: 10rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro p:first-of-type {
+    font-family: var(--mono);
+}
+
+#intro p:first-of-type span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--grey);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+#contact {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#contact p:last-child {
+    margin-top: 3rem;
+}
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--grey);
+    display: block;
+}
+
+nav a:hover {
+    color: var(--beige);
 }
