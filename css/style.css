@@ -1,0 +1,258 @@
+:root {
+    --dkblue: #042940;
+    --beige: #dbf227;
+    --dimbeige: #cde324;
+    --aqblue: #0fc2c0;
+    --frblue: #008f8c;
+    --grey: #e6e6e6;
+    --font-size: 1.3rem;
+    --mono: 'Oxygen Mono', monospace;
+    --sans: 'Oxygen', sans-serif;
+    --oceanblue: #13678a;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: var(--dkblue);
+    color: var(--beige);
+    font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--aqblue);
+}
+
+a:hover {
+    color: var(--frblue);
+    text-decoration: none;
+}
+
+#intro {
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro p:first-of-type {
+    font-family: var(--mono);
+}
+
+#intro p:first-of-type span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--grey);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.section-back {
+    background-color: var(--frblue);
+}
+
+.section-project {
+    background-color: var(--oceanblue);
+}
+
+.gradient {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 143, 140, 1) 0%,
+        rgba(219, 242, 39, 1) 100%
+    );
+    height: 2px;
+}
+
+#contact {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#contact p:last-child {
+    margin-top: 3rem;
+}
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--grey);
+    display: block;
+}
+
+nav a:hover,
+nav [class*='fa-']:hover {
+    color: var(--beige);
+}
+
+nav [class*='fa-'] {
+    font-size: 150%;
+    color: var(--aqblue);
+}
+
+nav h1 [class*='fa-'] {
+    font-size: 100%;
+}
+
+.button {
+    background-color: var(--beige);
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--dkblue);
+    font-family: var(--mono);
+    text-decoration: none;
+}
+
+.button:hover {
+    color: var(--dkblue);
+    background-color: var(--dimbeige);
+}
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+}
+
+#projects {
+    padding: 4rem 1rem;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(1.5rem * 2);
+}
+
+#projects h3 {
+    color: var(--grey);
+}
+
+#projects h4 {
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+}
+
+.black-box {
+    background-color: var(--dkblue);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--grey);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+#projects img {
+    margin: 2rem 0 4rem 0;
+    border-left: 1px solid var(--dkblue);
+    border-top: 1px solid var(--dkblue);
+    border-radius: 25px;
+    padding: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 550px) {
+    article {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+    #projects img {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+    }
+    .text {
+        order: 2;
+        text-align: right;
+        grid-column: 5 / 11;
+        grid-row: 1 / 2;
+    }
+    #projects ul {
+        justify-content: flex-end;
+    }
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap');
@@ -14,7 +14,7 @@
 
     <script src="https://kit.fontawesome.com/342a65accd.js" crossorigin="anonymous"></script>
 
-    <title>Portfolio</title>
+    <title>Salaheddine's Portfolio Website</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 <h1>
                     <a href="index.html">
                         <span class="fa-solid fa-code" aria-hidden="true"></span>
-                        <span>Salaheddine EL FARISSI</span>
+                        <span>Salaheddine El Farissi</span>
                     </a>
                 </h1>
             </li>
@@ -34,9 +34,9 @@
             <li><a href="https://www.linkedin.com/in/selfarissi/" target="_blank">
                     <span class="fa-brands fa-linkedin" aria-hidden="true"></span> <span
                         class="sr-only">LinkedIn</span></a></li>
-            <li><a href="https://github.com/" target="_blank"><span class="fa-brands fa-github"
+            <li><a href="https://github.com/salahelfarissi" target="_blank"><span class="fa-brands fa-github"
                         aria-hidden="true"></span> <span class="sr-only">GitHub</span></a></li>
-            <li><a href="https://www.salahelfarissi.me/" target="_blank">Resume</a></li>
+            <li><a href="https://www.salahelfarissi.me/" target="_blank" class="button">Resume</a></li>
         </ul>
     </nav>
     <section id="intro">
@@ -48,13 +48,59 @@
 
         <p>Currently, I'm working at <a href="https://www.egis-group.com/fr">Egis</a></p>
     </section>
-    <section id="contact">
-        <h2>Contact me</h2>
+    <div class="gradient"></div>
+    <div class="section-project">
+        <section id="projects">
+            <h2>Projects I'm proud of</h2>
+            <article>
+                <div class="text">
+                    <h4>Latest Project</h4>
+                    <h3>Tweets Clustering</h3>
+                    <p class="black-box">This project was part of a course issued at the ENSG-Géomatique school, it was
+                        proposed to us by BRGM
+                        in
+                        order to identify a quake's active area once we retrieved tweets related to a seismic activity.
+                        Check
+                        the
+                        code repo here <a
+                            href="https://github.com/lletassey/clustering-tweets-earthquake">clustering-tweets-earthquake</a>
+                    </p>
+                    <h4>Technologies used include:</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>GeoPandas</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+                <img src="./img/clustering.png" alt="">
+            </article>
+        </section>
+    </div>
+    <div class="gradient"></div>
+    <div class="section-back">
+        <section id="contact">
+            <h2>Contact me</h2>
 
-        <p>I'm always interested in hearing about new coding opportunities.</p>
+            <p>I'm always interested in hearing about new coding opportunities.</p>
 
-        <p><a href="mailto:salaheddine.elfarissi@gmail.com">Email me</a></p>
-    </section>
+            <p><a href="mailto:salaheddine.elfarissi@gmail.com" class="button">Email me</a></p>
+        </section>
+    </div>
+    <div class="gradient"></div>
+    <footer>
+        <h2>Salaheddine El Farissi &middot; Developer</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/selfarissi/" target="_blank">
+                    <span class="fa-brands fa-linkedin" aria-hidden="true"></span><span
+                        class="sr-only">LinkedIn</span></a></li>
+            <li><a href="https://github.com/salahelfarissi" target="_blank"><span class="fa-brands fa-github"
+                        aria-hidden="true"></span><span class="sr-only">GitHub</span></a></li>
+            <li><a href="mailto:salaheddine.elfarissi@gmail.com" target="_blank">
+                    <span class="fa-solid fa-envelope" aria-hidden="true"></span><span class="sr-only">Email</span></a>
+            </li>
+        </ul>
+        <p><small>&copy; 2023 Salaheddine El Farissi. All rights reserved.</small></p>
+    </footer>
 </body>
 
 </html>
