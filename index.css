@@ -111,11 +111,16 @@ nav a {
     display: block;
 }
 
-nav a:hover {
+nav a:hover,
+nav [class*='fa-']:hover {
     color: var(--beige);
 }
 
 nav [class*='fa-'] {
     font-size: 150%;
     color: var(--aqblue);
+}
+
+nav h1 [class*='fa-'] {
+    font-size: 100%;
 }
