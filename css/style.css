@@ -51,6 +51,10 @@ a:hover {
     margin: 0 auto;
 }
 
+.section-project {
+    background-color: var(--oceanblue);
+}
+
 #intro p {
     font-size: 1rem;
     line-height: 1.5;
@@ -74,10 +78,6 @@ a:hover {
 
 .section-back {
     background-color: var(--frblue);
-}
-
-.section-project {
-    background-color: var(--oceanblue);
 }
 
 .gradient {
@@ -242,12 +242,16 @@ footer ul {
         grid-template-columns: repeat(10, 1fr);
         gap: 1rem;
     }
+    #projects {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     #projects img {
         grid-column: 1 / 6;
         grid-row: 1 / 2;
     }
-    #projects [src*='iav-campus'] {
-        grid-column: 5 / 11;
+    #projects .reverse img {
+        grid-column: 6 / 11;
         grid-row: 1 / 2;
     }
     .text {
@@ -256,13 +260,16 @@ footer ul {
         grid-column: 5 / 11;
         grid-row: 1 / 2;
     }
-    .text2 {
+    .reverse .text {
         order: 2;
         text-align: left;
-        grid-column: 1 / 6;
+        grid-column: 1 / 7;
         grid-row: 1 / 2;
     }
-    #projects .project1 ul {
+    #projects ul {
         justify-content: flex-end;
+    }
+    #projects .reverse ul {
+        justify-content: flex-start;
     }
 }
